@@ -1,0 +1,9 @@
+---
+applications:
+- name: spyre
+  memory: 1G
+  instances: 1 
+  host: charts
+  buildpack: https://github.com/ihuston/python-conda-buildpack
+  timeout: 180
+  command: .conda/bin/python chart.py
